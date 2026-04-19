@@ -1,0 +1,115 @@
+name: postcraft_ai
+description: AI-powered property caption generator
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # Firebase (without storage)
+  firebase_core: ^2.32.0
+  firebase_auth: ^4.20.0
+  cloud_firestore: ^4.17.5
+
+  # Local storage for images
+  path_provider: ^2.1.2
+  path: ^1.9.0
+  image_picker: ^1.0.7
+
+  # Location / GPS
+  geolocator: ^11.0.0
+  geocoding: ^3.0.0
+
+  # HTTP for direct API calls
+  http: ^1.2.1
+
+  # Notifications for scheduled posts
+  flutter_local_notifications: ^17.2.1
+  timezone: ^0.9.4
+
+  # UI & Utilities
+  provider: ^6.1.2
+  share_plus: ^7.2.2
+  cached_network_image: ^3.3.1
+
+  # Biometric / device-credential app lock
+  local_auth: ^2.2.0
+
+  # Inline video playback for attached property clips
+  video_player: ^2.8.3
+
+  # Map-based location picker (Uber-style). Uses free OpenStreetMap tiles —
+  # no API key or billing required.
+  flutter_map: ^7.0.2
+  latlong2: ^0.9.1
+
+  # For image display
+  flutter_image_compress: ^2.1.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
+#name: postcraft_ai
+#description: PostCraft AI – Smart Social Media Content Studio (Firebase Edition)
+#publish_to: 'none'
+#version: 1.0.0+1
+#
+#environment:
+#  sdk: '>=3.0.0 <4.0.0'
+#
+#dependencies:
+#  flutter:
+#    sdk: flutter
+#
+#  # ── Firebase core ──────────────────────────────────────
+#  firebase_core:           ^2.27.0
+#  firebase_auth:           ^4.17.0
+#  cloud_firestore:         ^4.15.0
+#  firebase_storage:        ^11.6.0
+#  cloud_functions:         ^4.6.0
+#
+#  # ── State management ───────────────────────────────────
+#  provider:                ^6.1.1
+#
+#  # ── Image picking ──────────────────────────────────────
+#  image_picker:            ^1.0.7
+#
+#  # ── Location ───────────────────────────────────────────
+#  geolocator:              ^11.0.0
+#  geocoding:               ^3.0.0
+#
+#  # ── Sharing ────────────────────────────────────────────
+#  share_plus:              ^7.2.2
+#
+#  # ── UI extras ──────────────────────────────────────────
+#  cached_network_image:    ^3.3.1
+#  shimmer:                 ^3.0.0
+#
+#  # ── Icons ──────────────────────────────────────────────
+#  cupertino_icons:         ^1.0.6
+#
+#  #image_picker: ^1.0.7          # For picking images from camera/gallery
+#  path_provider: ^2.1.3         # For finding device storage location
+#  path: ^1.9.0                  # For file path manipulation
+#  permission_handler: ^11.3.1   # For requesting storage permissions (Android)
+#
+#dev_dependencies:
+#  flutter_test:
+#    sdk: flutter
+#  flutter_lints:           ^3.0.0
+#
+#flutter:
+#  uses-material-design: true
+#  assets:
+#    - assets/images/
