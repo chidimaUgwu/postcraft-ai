@@ -12,10 +12,9 @@ Built for **CS441 Mobile Web Programming — Final Project**
 
 | | |
 |---|---|
-| 🎥 Video Demo | https://youtu.be/LLf3ilRiuHo |
-| 📦 Download APK | https://drive.google.com/your-apk-link |
-| 📄 Project Report | https://drive.google.com/your-report-link |
-| 🎨 Figma Prototype | https://figma.com/your-prototype-link |
+| 🎥 Video Demo | https://youtu.be/2nU7izjuSA0 |
+| 📦 Download APK | https://drive.google.com/file/d/1pzNQY5LIRusEz1Nr0wCULCxYfWnPzMiZ/view?usp=sharing |
+| 🎨 Figma Prototype | https://www.figma.com/board/iF6iS0tXY68kZOje5bi7Gd/Untitled?node-id=0-1|
 
 ---
 
