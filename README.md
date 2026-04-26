@@ -83,4 +83,90 @@ Real estate agents in Nigeria waste 30+ minutes manually writing the same proper
 
 ---
 
-## 📂 Project Structure
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repo
+
+```bash
+git clone https://github.com/your-username/postcraft-ai.git
+cd postcraft-ai/flutter_app
+```
+
+### 2. Connect your own Firebase project
+
+```bash
+dart pub global activate flutterfire_cli
+flutterfire configure
+```
+
+This generates `lib/firebase_options.dart` and `android/app/google-services.json` for your project.
+
+### 3. Install packages
+
+```bash
+flutter pub get
+```
+
+### 4. Add Android permissions
+
+In `android/app/src/main/AndroidManifest.xml`:
+
+```xml
+<uses-permission android:name="android.permission.INTERNET"/>
+<uses-permission android:name="android.permission.CAMERA"/>
+<uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.USE_BIOMETRIC"/>
+<uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+```
+
+Also update `android/app/src/main/kotlin/.../MainActivity.kt`:
+
+```kotlin
+// Change this:
+class MainActivity: FlutterActivity()
+
+// To this (required by local_auth):
+class MainActivity: FlutterFragmentActivity()
+```
+
+### 5. Run the app
+
+```bash
+flutter run
+```
+
+### 6. Add your Gemini API key
+
+Open the app → Settings → paste your free Gemini API key.
+Get one at: https://aistudio.google.com/apikey
+
+---
+
+## 🔑 Files Not in This Repo
+
+These files contain private credentials and are excluded via `.gitignore`:
+
+
+---
+
+## 📱 Local Device Features Used
+
+| Feature | Package |
+|---|---|
+| Camera and gallery | image_picker |
+| GPS | geolocator |
+| Reverse geocoding | geocoding |
+| Interactive map | flutter_map |
+| Local notifications | flutter_local_notifications |
+| Biometric auth | local_auth |
+| File system | path_provider |
+| Video playback | video_player |
+| Native share | share_plus |
+| Web API — Google Gemini | http |
+
+---
+
+*CS441 MobileApplication — Final Project — Chidima Ugwu — 2026*
